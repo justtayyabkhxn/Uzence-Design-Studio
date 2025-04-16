@@ -1,24 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from '../src/components/Button/Button';
+import { TextInput } from '../src/components/Input/TextInput';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white p-6 space-y-4">
+      <h1>Welcome to the Component System</h1>
+      <TextInput label="Email" placeholder="Enter your email" helperText="We’ll never share your info." />
+      <Button variant="primary">Click Me</Button>
     </div>
   );
 }
