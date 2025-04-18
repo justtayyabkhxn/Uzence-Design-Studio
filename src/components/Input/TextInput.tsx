@@ -48,7 +48,7 @@ export const TextInput: React.FC<TextInputProps> = ({
           id={`${inputId}-desc`}
           className={clsx(
             'mt-1 text-sm',
-            hasError ? 'text-red-500' : 'text-gray-500 dark:text-gray-400'
+            hasError ? 'text-red-600' : 'text-gray-600 dark:text-gray-500'
           )}
         >
           {error || helperText}

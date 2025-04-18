@@ -48,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled || isLoading}
       {...props}
     >
-      {isLoading && <span className="mr-2 h-4 w-4 animate-spin border-2 border-white border-t-transparent rounded-full"></span>}
+      {isLoading && <span className="mr-2 h-4 w-5 animate-spin border-2 border-white border-t-transparent rounded-full"></span>}
       {children}
     </button>
   );
