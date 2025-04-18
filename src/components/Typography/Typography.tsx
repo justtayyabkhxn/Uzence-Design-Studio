@@ -34,8 +34,11 @@ export const Typography = ({
   children,
 }: TypographyProps) => {
   return (
+    <>
+    <h1 className="text-4xl font-bold text-blue-600">Heading Level 1</h1>
     <Tag className={clsx(baseStyles[variant], className)}>
       {children}
     </Tag>
+    </>
   );
 };
